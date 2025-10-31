@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class ="bg-gray-900">
     <label> Gerador de tecnicas </label>
     <div>
       <button key="technic_fight" @click="selected_type = 'fight'"
