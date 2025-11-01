@@ -1,0 +1,63 @@
+{
+  "Acerto Automático": {
+    "type": "levelBased",
+    "baseCost": "level",
+    "description": "Permite acertar automaticamente o alvo, sem rolar dados. Impossibilita acertos críticos. Custo igual ao grau da técnica."
+  },
+  "Adicionar Crítico": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 3,
+    "description": "Aumenta a margem de acerto crítico. 1 PP para 19-20 ou 3 PP para 18-20."
+  },
+  "Ataque de Cerco": {
+    "type": "binary",
+    "baseCost": 2,
+    "description": "Dobro do dano em objetos e estruturas. Sem efeito em objetos sendo carregados."
+  },
+  "Ataques Múltiplos": {
+    "type": "binary",
+    "baseCost": 6,
+    "description": "Garante mais 2 ataques até o final do turno. Recebe características normais desses ataques."
+  },
+  "Aumentar Acerto": {
+    "type": "scaling",
+    "baseCost": 0,
+    "scalingCost": 1,
+    "max": 3,
+    "description": "Aumenta a jogada de ataque em +1 por 1 PP, até +3."
+  },
+  "Aumentar Dano": {
+    "type": "scaling",
+    "baseCost": 3,
+    "scalingCost": 2,
+    "max": 3,
+    "requiresConcentration": true,
+    "description": "Aumenta o dano em +1 por 3 PP, até +3 de dano. Requer Concentração e ação bônus."
+  },
+  "Criar Arma": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 2,
+    "max": 4,
+    "requiresConcentration": true,
+    "description": "Cria uma arma temporária. 1 PP para 1d8, +2 PP para cada d8 adicional, máximo 4d8. Requer Concentração e ação bônus."
+  },
+  "Dano Adicional": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 1,
+    "max": 5,
+    "description": "Acrescenta dados de dano adicionais em técnicas instantâneas. Máximo de 5 PP/dados."
+  },
+  "Dano Contínuo": {
+    "type": "levelBased",
+    "baseCost": "Math.ceil(level / 2)",
+    "description": "Causa dano no início de cada turno da criatura/área. Custo igual à metade do grau da técnica, arredondado para cima."
+  },
+  "Dano Insistente": {
+    "type": "levelBased",
+    "baseCost": "Math.ceil(level / 2)",
+    "description": "Permite que técnicas em área causem pelo menos metade do dano, mesmo se a criatura tiver proteção. Custo igual à metade do grau da técnica, arredondado para cima."
+  }
+}

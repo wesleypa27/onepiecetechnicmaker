@@ -1,0 +1,90 @@
+{
+  "agarrado": {
+    "cost": 1,
+    "description": "O deslocamento da criatura agarrada torna-se 0, e ela não pode se beneficiar de bônus em deslocamento; a condição termina caso a criatura que a agarrou fique incapacitada ou solte a criatura agarrada."
+  },
+  "amedrontado": {
+    "cost": 1,
+    "description": "A criatura amedrontada sofre desvantagem em Testes de Atributo e jogadas de ataque enquanto a fonte do medo estiver em sua linha de visão; a criatura não pode se mover voluntariamente para uma posição que a aproxime mais da fonte do medo do que sua posição inicial ao final do turno."
+  },
+  "atordoado": {
+    "cost": 6,
+    "description": "Uma criatura atordoada está incapacitada; ela não pode se mover e só consegue falar de forma hesitante; ao final do cálculo de dano de um acerto crítico, recebe 2 dados de dano adicionais; falha automaticamente em Salvaguardas de Força e Destreza; jogadas de ataque contra ela possuem vantagem."
+  },
+  "bebado": {
+    "cost": 1,
+    "description": "Uma criatura embriagada se comporta de maneira visivelmente diferente do normal; sofre desvantagem em Salvaguardas, Testes de Atributo de Destreza e outros testes julgados pelo Narrador; termina após um descanso curto ou longo ou ações do Narrador."
+  },
+  "caido": {
+    "cost": 1,
+    "description": "A única forma de deslocamento disponível é rastejar, a menos que se levante; sofre desvantagem em jogadas de ataque; ataques contra a criatura têm vantagem se o atacante estiver a 1,5m dela, caso contrário, os ataques sofrem desvantagem."
+  },
+  "cego": {
+    "cost": 1,
+    "description": "Falha automaticamente em Testes de Atributo que exijam visão; jogadas de ataque contra a criatura possuem vantagem, ataques da criatura sofrem desvantagem."
+  },
+  "empoderado": {
+    "cost": 3,
+    "description": "Danos de ataques corpo a corpo tornam-se 1d12; Pontos de Poder de ataques malsucedidos não são descontados; deslocamento não pode ser reduzido por terreno difícil."
+  },
+  "enfeitiçado": {
+    "cost": 2,
+    "description": "Não pode atacar quem a enfeitiçou nem tê-lo como alvo de habilidades nocivas; quem a enfeitiçou possui vantagem em Testes de Atributo para interagir socialmente com ela."
+  },
+  "enfurecido": {
+    "cost": 1,
+    "description": "Ataca a fonte da fúria a todo custo; sofre desvantagem em jogadas de ataque; usa todo deslocamento disponível para se aproximar; ataca qualquer criatura que interfira; não pode manter habilidades que requerem Concentração; ataques corpo a corpo causam 1d4 de dano adicional; fúria dura 1 minuto ou termina se cair inconsciente ou não atacar; criatura amigável pode tentar acalmar com Teste de Sabedoria CD 13."
+  },
+  "envenenado": {
+    "cost": 1,
+    "description": "Sofre desvantagem em ataques e Testes de Atributo; venenos comuns curam após 1 dia de descanso com Salvaguarda de Constituição CD 15, que se bem-sucedida garante vantagem contra veneno por 24h."
+  },
+  "estremecido": {
+    "cost": 2,
+    "description": "Sofre desvantagem em ataques; não pode usar Técnicas ou habilidades que exigem concentração; falha automaticamente em Salvaguardas; cada 1,5m de deslocamento custa 1,5m adicional."
+  },
+  "impedido": {
+    "cost": 2,
+    "description": "Deslocamento torna-se 0 e não pode se beneficiar de bônus; jogadas de ataque contra a criatura possuem vantagem, ataques da criatura sofrem desvantagem; sofre desvantagem em Salvaguardas de Destreza."
+  },
+  "incapacitado": {
+    "cost": 4,
+    "description": "Não pode realizar ações, ações poderosas, ações bônus ou reações."
+  },
+  "inconsciente": {
+    "cost": 8,
+    "description": "Está incapacitada; não pode se mover ou falar; fica caída; falha automaticamente em Salvaguardas de Força ou Destreza; ataques contra ela possuem vantagem; qualquer ataque a 1,5m é crítico."
+  },
+  "invisivel": {
+    "cost": 5,
+    "description": "É impossível de ser vista sem técnicas ou sentidos especiais; jogadas de ataque contra a criatura sofrem desvantagem, ataques da criatura têm vantagem."
+  },
+  "letargico": {
+    "cost": 2,
+    "description": "Não pode usar Técnicas; deve escolher apenas uma ação por turno; dano de ataques reduzido pela metade, exceto armas de fogo."
+  },
+  "paralisado": {
+    "cost": 8,
+    "description": "Está incapacitada; não pode se mover ou falar; falha automaticamente em Salvaguardas de Força e Destreza; jogadas de ataque contra a criatura possuem vantagem; acertos críticos adicionam 2 dados de dano; ataques a 1,5m são críticos."
+  },
+  "queimado": {
+    "cost": 1,
+    "description": "Sofre 1d6 de dano de Fogo contínuo na primeira jogada de ataque, não pode apagar com Pontos de Vida temporários; não pode usar Técnicas ou habilidades que requerem concentração; falha em Testes de Concentração; desvantagem em Testes de Concentração até tratamento com Medicina CD 10 ou Sobrevivência CD 17."
+  },
+  "sangramento": {
+    "cost": 1,
+    "description": "Sofre 1d6 de dano Cortante contínuo na primeira vez que se mover no turno; persiste até tratamento com Medicina CD 10 ou Sobrevivência CD 16."
+  },
+  "sonolento": {
+    "cost": 1,
+    "description": "Não pode usar Reações; não pode realizar mais de um ataque corpo a corpo por turno; sofre desvantagem em Testes de Atributo de Destreza e Sabedoria."
+  },
+  "sufocado": {
+    "cost": 1,
+    "description": "Não consegue formular palavras inteligíveis; dura 1 + modificador de Constituição (mínimo 1 turno); deve realizar Salvaguarda de Constituição CD 10 no início de cada turno para não desmaiar, dificuldade aumenta +2 por turno subsequente."
+  },
+  "surdo": {
+    "cost": 1,
+    "description": "Falha automaticamente em qualquer Teste de Atributo que exija o uso da audição."
+  }
+}

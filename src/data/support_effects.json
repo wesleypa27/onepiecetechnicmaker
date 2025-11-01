@@ -1,0 +1,62 @@
+{
+  "Adicionar Cura": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 1,
+    "description": "Permite curar PV de uma criatura. 1 PP por 1d10 PV em uma criatura ou 1d6 PV em múltiplas criaturas."
+  },
+  "Adicionar Pontos de Vida Temporários": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 1,
+    "description": "Cria PV temporários em uma ou mais criaturas. 1 PP por 1d10 PV temporários em uma criatura ou 1d4 em múltiplas.",
+    "requiresConcentration": true
+  },
+  "Adicionar Voo": {
+    "type": "scaling",
+    "baseCost": 2,
+    "scalingCost": 1,
+    "description": "Concede deslocamento de voo. 2 PP para 9 metros, +1 PP a cada 3 metros adicionais, máximo 15 metros.",
+    "requiresConcentration": true
+  },
+  "Aumentar Classe de Resistência": {
+    "type": "scaling",
+    "baseCost": 2,
+    "scalingCost": 2,
+    "max": 3,
+    "description": "Aumenta a CR de uma criatura. 2 PP por +1, até +3.",
+    "requiresConcentration": true
+  },
+  "Aumentar Movimento": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 1,
+    "max": 2,
+    "description": "Aumenta deslocamento de uma criatura. 1 PP para +3 metros, 2 PP para +6 metros.",
+    "requiresConcentration": true
+  },
+  "Contenção de Dano (Coletivo)": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 1,
+    "max": 15,
+    "description": "Reduz dano em você e criaturas em um cone de 12m. 1 PP por 1d8 de proteção.",
+    "requiresConcentration": true
+  },
+  "Contenção de Dano (Individual)": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 1,
+    "max": 30,
+    "description": "Reduz dano de uma criatura. 1 PP por 2d8 de proteção.",
+    "requiresConcentration": true
+  },
+  "Redução de Movimento": {
+    "type": "scaling",
+    "baseCost": 1,
+    "scalingCost": 1,
+    "max": 2,
+    "description": "Reduz deslocamento de uma criatura. 1 PP para metade, 2 PP para 0.",
+    "requiresConcentration": true
+  }
+}

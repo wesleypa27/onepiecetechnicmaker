@@ -1,0 +1,86 @@
+{
+  "Concentração Crucial": {
+    "type": "costReduction",
+    "description": "Técnica exige concentração e termina se você a perder. -2 PP para o primeiro minuto, -1 PP por minuto adicional.",
+    "requiresConcentration": true,
+    "costReduction": {
+      "firstMinute": 2,
+      "eachAdditionalMinute": 1
+    }
+  },
+  "Efeito Colateral": {
+    "type": "costReduction",
+    "description": "Causa dano ou efeitos prejudiciais ao usuário. Redução igual ao custo do efeito ou 1 PP por cada 5 PV recebidos, máximo 8 PP combinado.",
+    "costReduction": {
+      "maxReduction": 8
+    }
+  },
+  "Reduzir Área": {
+    "type": "costReduction",
+    "description": "Reduz alcance máximo de uma técnica de área. -1 PP por cada 6m de raio reduzidos ou 9m em Cone, máximo 3 PP.",
+    "costReduction": {
+      "maxReduction": 3
+    }
+  },
+  "Requisito Limitador": {
+    "type": "costReduction",
+    "description": "Impoe um requisito extra que limite o uso da técnica. Redução entre -1 e -5 PP, a critério do Narrador.",
+    "costReduction": {
+      "minReduction": 1,
+      "maxReduction": 5
+    }
+  },
+  "Técnica Debilitante": {
+    "type": "costReduction",
+    "description": "Usuário fica impedido de gastar PP voluntariamente por um período. -3 PP por minuto, máximo 2 minutos.",
+    "costReduction": {
+      "perMinute": 3,
+      "maxMinutes": 2
+    }
+  },
+  "Técnica Demorada": {
+    "type": "costReduction",
+    "description": "Exige Ação Poderosa para execução. Redução de -3 PP.",
+    "costReduction": {
+      "fixed": 3
+    }
+  },
+  "Técnica Dependente": {
+    "type": "costReduction",
+    "description": "Exige que outra técnica esteja ativa. Redução igual à metade do custo da técnica requerida (mínimo 1, máximo 3 PP).",
+    "costReduction": {
+      "minReduction": 1,
+      "maxReduction": 3,
+      "percentOfRequired": 50
+    }
+  },
+  "Técnica Devoradora": {
+    "type": "costReduction",
+    "description": "Extrai força espiritual causando fadiga temporária. Redução de -3 PP e 10 minutos sem Haki.",
+    "costReduction": {
+      "fixed": 3
+    }
+  },
+  "Técnica Exaustiva": {
+    "type": "costReduction",
+    "description": "Extrai força física, causando Níveis de Exaustão. Redução de -4 PP por Nível de Exaustão concedido.",
+    "costReduction": {
+      "perExhaustionLevel": 4
+    }
+  },
+  "Técnica Indomável": {
+    "type": "costReduction",
+    "description": "Técnicas de múltiplos alvos causam dano reduzido ou nenhum. Redução igual ao grau da técnica.",
+    "costReduction": {
+      "byGrade": true
+    }
+  },
+  "Técnica Não Ofensiva": {
+    "type": "costReduction",
+    "description": "Técnica não causa dano. Redução de -2 PP para técnicas de combate ou -1 PP para técnicas auxiliares.",
+    "costReduction": {
+      "combat": 2,
+      "auxiliary": 1
+    }
+  }
+}
