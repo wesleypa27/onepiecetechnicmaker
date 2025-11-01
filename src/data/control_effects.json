@@ -6,31 +6,31 @@
     "description": "Empurra uma criatura por 3 metros a cada 1 PP adicional. Criaturas de tamanho maior que Grande não podem ser empurradas."
   },
   "Adicionar Vantagem/Desvantagem": {
-    "type": "binary",
+    "type": "levelBased",
     "baseCost": "Math.ceil(level / 2)",
     "description": "Concede vantagem ou desvantagem até o início do próximo turno. Escolha apenas um tipo."
   },
   "Aumentar Alcance": {
     "type": "scaling",
-    "baseCost": 0,
+    "baseCost": 1,
     "scalingCost": 1,
     "description": "Aumenta o alcance em 6 metros por 1 PP."
   },
   "Aumentar Área": {
     "type": "scaling",
-    "baseCost": 0,
+    "baseCost": 1,
     "scalingCost": 1,
     "description": "Aumenta o tamanho da área em 3 metros por 1 PP (ou 1,5m de largura por 2 PP no caso de 'Linha')."
   },
   "Aumentar Classe de Dificuldade": {
     "type": "scaling",
-    "baseCost": 0,
+    "baseCost": 1,
     "scalingCost": 1,
     "max": 2,
     "description": "Aumenta a CD da técnica em +1 por 1 PP, até o máximo de +2."
   },
   "Condição/Efeito em Área": {
-    "type": "binary",
+    "type": "levelBased",
     "baseCost": "Math.ceil(level / 2)",
     "description": "Aplica uma condição em área nas criaturas afetadas que falharem na Salvaguarda."
   },

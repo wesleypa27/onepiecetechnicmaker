@@ -42,8 +42,11 @@
 
         <div class="font-bold mb-2">Efeitos de Controle</div>
         <div class="mt-2">
-            <EffectControl v-for="(effect, index) in controlEffects" :key="index" :effect="effect"
-                v-model="values[effect.name]" @update:cost="updateEffectCost(effect.name, $event)"
+            <EffectControl
+                v-for="(effect, index) in controlEffects"
+                :key="index"
+                :effect="effect"
+                v-model="values[effect.name]"@update:cost="updateEffectCost(effect.name, $event)"
                 @show-description="openEffectDescription" />
         </div>
 
@@ -65,18 +68,19 @@
                 @show-description="openEffectDescription" />
         </div>
 
-        <hr class="my-4 border-t border-gray-500/50" />
-
-        <div class="mt-4 font-bold">
-            Custo Total: {{ totalCost }}
-        </div>
-
         <div v-if="popupVisible" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
             <div class="bg-gray-800 p-4 rounded max-w-sm w-full relative">
                 <button @click="popupVisible = false"
                     class="absolute top-2 right-2 px-2 py-1 bg-red-600 rounded text-white">X</button>
                 <p>{{ popupText }}</p>
             </div>
+        </div>
+
+        <!-- BARRA FIXA DE CUSTO TOTAL -->
+        <div
+            class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-600 p-4 flex justify-between items-center text-white z-50">
+            <span class="text-lg font-semibold">Custo Total:</span>
+            <span class="text-2xl font-bold text-yellow-400">{{ totalCost }}</span>
         </div>
     </div>
 </template>
