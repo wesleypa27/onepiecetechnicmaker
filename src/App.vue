@@ -86,11 +86,20 @@ const maxPointsByLevel = {
 const totalFooterText = computed(() => {
   const maxPoints = maxPointsByLevel[selected_level.value] || 0
 
+  // Puxa o custo dos efeitos
   let cost = total_effect_cost.value
+
+  // Redução de -1 para estilo de luta
   if (selected_type.value === 'fight') cost -= 1
+
+  // Custo extra pelos dados de dano
+  if (selected_damage.value === 'id_damage_Alvo unico' || selected_damage.value === 'id_damage_Multiplos Alvos') {
+    cost += dice_quantity.value
+  }
 
   return `${cost}/${maxPoints}`
 })
+
 
 const ranges = ["Linha", "Cone", "Esfera"]
 const damages = ["Auxiliar", "Alvo unico", "Multiplos Alvos"]
