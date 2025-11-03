@@ -136,7 +136,7 @@ const displayCost = computed(() => {
 
   if (props.effect.type === 'levelBased') {
     const level = 2
-    return eval(props.effect.baseCost)
+    return localValue.value ? eval(props.effect.baseCost) : 0
   }
 
   if (props.effect.type === 'complex') {
