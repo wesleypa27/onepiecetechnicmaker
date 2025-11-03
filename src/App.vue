@@ -57,6 +57,11 @@
         <Effects v-model:total_cost="total_effect_cost" />
       </Tab>
     </Tabs>
+<div class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-600 p-4 flex justify-between items-center text-white z-50">
+  <span class="text-lg font-semibold">Custo Total:</span>
+  <span class="text-2xl font-bold text-yellow-400">{{ totalFooterText }}</span>
+</div>
+
   </div>
 </template>
 
@@ -67,9 +72,42 @@ import Tab from './components/Tab.vue'
 import SelectButtons from './components/SelectButtons.vue'
 import Effects from './components/Effects.vue'
 
-const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const levels = [1, 2, 3, 4, 5, 6, 7, 'Auxiliar']
+const maxPointsByLevel = {
+  'id_level_1': 2,
+  'id_level_2': 4,
+  'id_level_3': 6,
+  'id_level_4': 9,
+  'id_level_5': 12,
+  'id_level_6': 16,
+  'id_level_7': 20,
+  'id_level_Auxiliar': 10,
+}
+const totalFooterText = computed(() => {
+  const maxPoints = maxPointsByLevel[selected_level.value] || 0
+
+  let cost = total_effect_cost.value
+  if (selected_type.value === 'fight') cost -= 1
+
+  return `${cost}/${maxPoints}`
+})
+
 const ranges = ["Linha", "Cone", "Esfera"]
 const damages = ["Auxiliar", "Alvo unico", "Multiplos Alvos"]
+
+
+const totalCost = computed(() => {
+  let cost = 0
+
+  // Efeitos vindos do componente Effects
+  cost += total_effect_cost.value
+
+  // Custo baseado no nível 
+  cost += Number(selected_level.value.replace('id_level_', ''))
+
+  return cost
+})
+
 
 
 const selected_type = ref('fight')

@@ -77,11 +77,6 @@
         </div>
 
         <!-- BARRA FIXA DE CUSTO TOTAL -->
-        <div
-            class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-600 p-4 flex justify-between items-center text-white z-50">
-            <span class="text-lg font-semibold">Custo Total:</span>
-            <span class="text-2xl font-bold text-yellow-400">{{ totalCost }}</span>
-        </div>
     </div>
 </template>
 
